@@ -1,0 +1,33 @@
+{
+  "name": "task-management",
+  "version": "1.0.0",
+  "description": "RESTful API for tasks and users with Basic Auth, RBAC, and pagination",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules node ./node_modules/jest/bin/jest.js --runInBand"
+  },
+  "keywords": [
+    "express",
+    "mongoose",
+    "tasks",
+    "rbac",
+    "basic-auth"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.6.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "cross-env": "^10.0.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.4",
+    "supertest": "^7.0.0"
+  }
+}
